@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Higher Definition Academy",
+    "slug": "higher-definition-academy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": { "backgroundColor": "#090a0f" },
+    "ios": { "supportsTablet": true, "bundleIdentifier": "ng.hda.academy" },
+    "android": {
+      "adaptiveIcon": { "backgroundColor": "#090a0f" },
+      "package": "ng.hda.academy"
+    },
+    "web": { "bundler": "metro" }
+  }
+}

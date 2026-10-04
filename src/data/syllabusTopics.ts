@@ -9,3 +9,6 @@ export const SYLLABUS_TOPICS: Record<string, string[]> = {
   "CRS": ["Old Testament", "New Testament", "Themes"],
   "Commerce": ["Trade", "Business units", "Insurance", "Banking"],
 };
+export function getTopicsForSubject(subject: string): string[] {
+  return SYLLABUS_TOPICS[subject] || [];
+}

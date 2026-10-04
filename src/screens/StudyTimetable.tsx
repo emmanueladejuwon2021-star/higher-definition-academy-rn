@@ -19,7 +19,7 @@ export default function StudyTimetable({ theme }: { theme: Theme }) {
             <Text style={{ color: palette.accent, fontWeight: "800", marginBottom: 6 }}>{day}</Text>
             {rows.map((slot) => (
               <Pressable key={slot.id} onPress={() => setSlots((prev) => prev.map((s) => s.id === slot.id ? { ...s, completed: !s.completed } : s))} style={{ borderWidth: 1, borderColor: theme.line, backgroundColor: theme.card, borderRadius: 14, padding: 12, marginBottom: 8 }}>
-                <Text style={{ color: theme.text, fontWeight: "800" }}>{slot.startTime}–{slot.endTime} · {slot.subject}</Text>
+                <Text style={{ color: theme.text, fontWeight: "800" }}>{slot.startTime}-{slot.endTime} · {slot.subject}</Text>
                 <Text style={{ color: theme.muted }}>{slot.topic}</Text>
                 <Text style={{ color: slot.completed ? palette.accent : palette.warn, marginTop: 4 }}>{slot.completed ? "Done" : slot.priority}</Text>
               </Pressable>
@@ -32,4 +32,3 @@ export default function StudyTimetable({ theme }: { theme: Theme }) {
     </ScrollView>
   );
 }
-import React from "react";
